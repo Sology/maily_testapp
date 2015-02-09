@@ -15,12 +15,12 @@ foreman start
 
 ## More Information
 
-* [Home Page](http://www.mailyherald.org)
+* [Home Page](http://mailyherald.org)
 * [API Docs](http://www.rubydoc.info/gems/maily_herald)
-* Showcase (_coming soon_)
+* [Showcase](http://showcase.sology.eu/maily_herald)
 
 For bug reports or feature requests see the [issues on Github](https://github.com/Sology/maily_testapp/issues).  
 
 ## License
 
-LGPLv3 License. Copyright 2013-2015 Sology. http://www.sology.eu
+LGPLv3 License. Copyright 2015 Sology. http://www.sology.eu
