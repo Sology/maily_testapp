@@ -1,6 +1,6 @@
 # MailyHerald Test Application
 
-This Rails 4.2 application demonstrates basic usage of [MailyHerald](https://github.com/Sology/maily_herald) - Ruby on Rails email marketing solution.
+This Rails 4.2 application demonstrates basic usage of [MailyHerald](https://github.com/Sology/maily_herald) - Ruby on Rails email management solution.
 
 ## Setup
 

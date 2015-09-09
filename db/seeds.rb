@@ -8,13 +8,8 @@
     created_at: Time.now - rand(14.days),
   )
 
-  # Let's subscribe all active users to generic communication list.
-  if user.active
-    MailyHerald.list(:general_communication).subscribe!(user)
-  end
-
   # For some active users create randomly newsletter subscriptions.
-  if user.active && Forgery('basic').boolean
+  if Forgery('basic').boolean
     MailyHerald.list(:newsletters).subscribe!(user)
   end
 end

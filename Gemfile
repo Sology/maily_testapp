@@ -17,6 +17,8 @@ group :development, :test do
   gem 'foreman'
 end
 
+gem 'sinatra', :require => nil
+
 gem 'maily_herald'
 gem 'maily_herald-webui'
 gem 'forgery'
