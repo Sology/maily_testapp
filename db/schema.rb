@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150205121615) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "maily_herald_dispatches", force: :cascade do |t|
     t.string   "type",                                       null: false
     t.integer  "sequence_id"
@@ -33,7 +36,7 @@ ActiveRecord::Schema.define(version: 20150205121615) do
     t.datetime "updated_at"
   end
 
-  add_index "maily_herald_dispatches", ["name"], name: "index_maily_herald_dispatches_on_name", unique: true
+  add_index "maily_herald_dispatches", ["name"], name: "index_maily_herald_dispatches_on_name", unique: true, using: :btree
 
   create_table "maily_herald_lists", force: :cascade do |t|
     t.string "name",         null: false
