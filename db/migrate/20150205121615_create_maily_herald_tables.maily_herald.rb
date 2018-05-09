@@ -1,5 +1,5 @@
 # This migration comes from maily_herald (originally 20150205120443)
-class CreateMailyHeraldTables < ActiveRecord::Migration
+class CreateMailyHeraldTables < ActiveRecord::Migration[5.2]
   def change
     create_table :maily_herald_dispatches do |t|
       t.string            :type,                                        null: false

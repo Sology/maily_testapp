@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   database: maily_testapp
-  host: localhost
-  username: maily_testapp
-  password: maily_testapp
+  # host: localhost
+  # username: maily_testapp
+  # password: maily_testapp
   encoding: utf8
