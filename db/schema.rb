@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2015_02_05_121615) do
+ActiveRecord::Schema.define(version: 2018_05_09_085912) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,12 +27,14 @@ ActiveRecord::Schema.define(version: 2015_02_05_121615) do
     t.string "subject"
     t.string "from"
     t.string "state", default: "disabled"
-    t.text "template"
+    t.text "template_plain"
     t.integer "absolute_delay"
     t.integer "period"
-    t.boolean "override_subscription"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "kind", default: 0, null: false
+    t.text "template_html"
+    t.boolean "track", default: true
     t.index ["name"], name: "index_maily_herald_dispatches_on_name", unique: true
   end
 
@@ -50,6 +52,7 @@ ActiveRecord::Schema.define(version: 2015_02_05_121615) do
     t.string "status", null: false
     t.text "data"
     t.datetime "processing_at"
+    t.string "token"
   end
 
   create_table "maily_herald_subscriptions", force: :cascade do |t|

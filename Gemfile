@@ -5,7 +5,6 @@ gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2.2'
-gem 'listen'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -16,10 +15,12 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'foreman'
+  gem 'listen'
+  gem 'hirb'
 end
 
 gem 'sinatra', :require => nil
 
-gem 'maily_herald'
-gem 'maily_herald-webui'
+gem 'maily_herald', :git => "https://github.com/Sology/maily_herald", :branch => "ng"
+gem 'maily_herald-webui', :git => "https://github.com/Sology/maily_herald-webui", :branch => "ng"
 gem 'forgery'
