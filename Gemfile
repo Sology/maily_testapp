@@ -17,10 +17,11 @@ group :development, :test do
   gem 'foreman'
   gem 'listen'
   gem 'hirb'
+  gem 'turbolinks'
 end
 
 gem 'sinatra', :require => nil
 
-gem 'maily_herald', :git => "https://github.com/Sology/maily_herald", :branch => "ng"
-gem 'maily_herald-webui', :git => "https://github.com/Sology/maily_herald-webui", :branch => "ng"
+gem 'maily_herald', :path => "../maily_herald"
+gem 'maily_herald-webui', :path => "../maily_herald-webui"
 gem 'forgery'
