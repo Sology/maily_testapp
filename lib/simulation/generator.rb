@@ -16,4 +16,16 @@ class Simulation::Generator
       end
     end
   end
+
+  # Create some sample users and set delivery status
+  # AVAILABLE_STATUSES = [:scheduled, :delivered, :skipped, :error]
+  def create_and_set_status(n=50, status)
+    create(n)
+    logs = MailyHerald::Log.last(n)
+    logs.each do |log|
+      log.status = status
+      log.processing_at = Time.now - rand(31.days)
+      log.save
+    end
+  end
 end
