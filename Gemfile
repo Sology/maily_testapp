@@ -18,6 +18,10 @@ group :development, :test do
   gem 'listen'
   gem 'hirb'
   gem 'turbolinks'
+  gem 'capybara-webkit'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'selenium-webdriver'
 end
 
 gem 'sinatra', :require => nil
