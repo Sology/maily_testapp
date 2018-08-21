@@ -1,6 +1,6 @@
 # MailyHerald Test Application
 
-This Rails 4.2 application demonstrates basic usage of [MailyHerald](https://github.com/Sology/maily_herald) - Ruby on Rails email management solution.
+This Rails 5 application demonstrates basic usage of [MailyHerald](https://github.com/Sology/maily_herald) - Ruby on Rails email processing solution.
 
 ## Setup
 
@@ -8,7 +8,8 @@ This Rails 4.2 application demonstrates basic usage of [MailyHerald](https://git
 git clone https://github.com/Sology/maily_testapp
 cd maily_testapp
 bundle install
-rake db:migrate
+rake db:create
+rake db:schema:load
 rake db:seed
 foreman start
 ```
@@ -23,4 +24,4 @@ For bug reports or feature requests see the [issues on Github](https://github.co
 
 ## License
 
-LGPLv3 License. Copyright 2015 Sology. http://www.sology.eu
+LGPLv3 License. Copyright Sology. http://www.sology.eu
