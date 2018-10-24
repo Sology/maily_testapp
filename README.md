@@ -14,6 +14,16 @@ rake db:seed
 foreman start
 ```
 
+In order to use [Mailcatcher](https://mailcatcher.me/), uncomment following lines in `config/environments/development.rb`:
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+
+Install Mailcatcher and run it:
+
+    gem install mailcatcher
+    mailcatcher -fv
+
 ## More Information
 
 * [Home Page](http://mailyherald.org)
@@ -24,4 +34,4 @@ For bug reports or feature requests see the [issues on Github](https://github.co
 
 ## License
 
-LGPLv3 License. Copyright Sology. http://www.sology.eu
+AGPLv3 License. Copyright Sology. http://www.sology.eu

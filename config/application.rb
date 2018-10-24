@@ -23,8 +23,8 @@ module Maily
     # Do not swallow errors in after_commit/after_rollback callbacks.
     # config.active_record.raise_in_transactional_callbacks = true
 
-    config.action_mailer.default_options = { from: "hello@test.mailyherald.org" }
-    config.action_mailer.default_url_options = { host: "test.mailyherald.org" }
+    config.action_mailer.default_options = { from: "hello@#{ENV["HOSTNAME"]}" }
+    config.action_mailer.default_url_options = { host: ENV["HOSTNAME"] }
 
     config.autoload_paths << Rails.root.join('lib')
   end

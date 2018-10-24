@@ -1,0 +1,1 @@
+server "host", user: "maily", roles: %w{app db web}
